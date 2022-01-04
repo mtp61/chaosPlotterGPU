@@ -4,8 +4,8 @@ import time
 
 from plotter import plotter
 
-iters = 50000
-endIters = 100
+iters = 20000
+endIters = 1000
 
 magnets = [
     [-56, 1, 10],

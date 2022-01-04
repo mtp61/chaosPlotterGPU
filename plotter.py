@@ -24,7 +24,7 @@ def plotter(fx, fy):
         print(f"bin: ({bins[x][0] + binSize/2:.0f}, {bins[x][2] + binSize/2:.0f}) has {str(binNums[x])}")
 
     # create image
-    imageSize = int(math.sqrt(len(f)))
+    imageSize = int(math.sqrt(len(fx)))  # TODO this is bad
     bitmap = Image.new("RGB", (imageSize, imageSize), "white")
     pix = bitmap.load()
 
